@@ -1,0 +1,20 @@
+SELECT *
+FROM superstore
+WHERE price;
+
+SELECT SUM(price)
+FROM superstore;
+
+SELECT MAX(price), category
+FROM superstore
+GROUP BY category;
+
+-- What is the ranking of most products in stock from highest to lowest?
+
+SELECT 
+item_name,
+stock_quantity
+FROM superstore
+ORDER BY stock_quantity DESC;
+
+-- Check out my superstore project example.  
